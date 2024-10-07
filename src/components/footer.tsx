@@ -10,12 +10,13 @@ export function Footer() {
 
       <div className="absolute max-w-5xl mx-auto inset-0 flex flex-col items-center justify-center">
         <h2 className="text-5xl mb-1">
-          Entre <strong>em contato.</strong>
+          Entre{" "}
+          <strong className="font-semibold text-black">em contato,</strong>
         </h2>
-        <span className="text-xl">Para conversarmos mais...</span>
+        <span className="text-xl mt-2">Para conversarmos mais</span>
       </div>
-      <nav className="absolute max-w-5xl mx-auto bottom-10 inset-x-0 text-center">
-        <ul className="inline-flex space-x-6">
+      <nav className="absolute max-w-5xl mx-auto bottom-10 inset-x-0 text-center mb-8">
+        <ul className="flex flex-row gap-20 justify-center items-center">
           <li>
             <a href="">
               <MdEmail size={48} />

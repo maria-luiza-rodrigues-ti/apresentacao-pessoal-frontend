@@ -39,7 +39,9 @@ export function RecentProjectsSection() {
     <section id="#recents-projects" className="mb-32 max-w-5xl mx-auto">
       <h2 className="text-4xl text-white-70 text-left font-light mb-24">
         Alguns dos meus{" "}
-        <strong className="font-semibold text-black">projetos recentes</strong>
+        <strong className="block font-semibold text-black">
+          projetos recentes
+        </strong>
       </h2>
       <div className="space-y-24">
         {recentProjetcs.map((project) => {
@@ -60,13 +62,15 @@ export function RecentProjectsSection() {
                 />
               </figure>
               <div className="mt-auto w-1/2">
-                <h3 className="uppercase text-white font-semibold text-3xl mb-4">
+                <h3 className="uppercase text-black font-semibold mb-4">
                   {project.name}
                 </h3>
-                <p className="mb-6">{project.description}</p>
-                <ul>
+                <p className="mb-6 text-xl">{project.description}</p>
+                <ul className="flex flex-wrap gap-4">
                   {project.technologies.map((technologies) => (
-                    <li key={technologies}>{technologies}</li>
+                    <li key={technologies} className="text-black">
+                      {technologies}
+                    </li>
                   ))}
                 </ul>
                 <div className="flex mt-8 gap-6">

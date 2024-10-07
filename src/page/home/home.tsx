@@ -40,7 +40,7 @@ export function Home() {
             <strong className="font-semibold text-black">
               <ReactTyped
                 strings={["Desenvolvedora Front-end"]}
-                typeSpeed={50}
+                typeSpeed={60}
                 startDelay={200}
                 showCursor={false}
               />
@@ -48,7 +48,7 @@ export function Home() {
             <span>
               <ReactTyped
                 strings={[" com experiência em"]}
-                typeSpeed={50}
+                typeSpeed={60}
                 startDelay={2000}
                 showCursor={false}
               />
@@ -56,7 +56,7 @@ export function Home() {
             <strong className="font-semibold text-black">
               <ReactTyped
                 strings={["React, TypeScript e plataformas de e-commerce"]}
-                typeSpeed={50}
+                typeSpeed={60}
                 startDelay={3500}
                 showCursor={false}
               />
@@ -66,7 +66,7 @@ export function Home() {
                 strings={[
                   ". Comprometida em criar interfaces dinâmicas e acessíveis, aliando design responsivo com performance e usabilidade.",
                 ]}
-                typeSpeed={50}
+                typeSpeed={60}
                 startDelay={6500}
                 showCursor={false}
               />
