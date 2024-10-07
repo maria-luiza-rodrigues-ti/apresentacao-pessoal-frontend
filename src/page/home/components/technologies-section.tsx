@@ -23,29 +23,29 @@ import {
 } from "react-icons/si";
 
 const technologies = [
-  { id: 1, name: "HTML", icon: <FaHtml5 size={80} /> },
-  { id: 2, name: "CSS", icon: <FaCss3Alt size={80} /> },
-  { id: 3, name: "JavaScript", icon: <IoLogoJavascript size={80} /> },
-  { id: 4, name: "JQuery", icon: <DiJqueryLogo size={80} /> },
-  { id: 5, name: "TypeScript", icon: <SiTypescript size={80} /> },
-  { id: 6, name: "ReactJS", icon: <RiReactjsFill size={80} /> },
-  { id: 7, name: "NextJS", icon: <RiNextjsFill size={80} /> },
-  { id: 8, name: "NodeJS", icon: <FaNodeJs size={80} /> },
-  { id: 9, name: "ExpressJS", icon: <SiExpress size={80} /> },
-  { id: 10, name: "FastifyJS", icon: <SiFastify size={80} /> },
-  { id: 11, name: "Sass", icon: <FaSass size={80} /> },
-  { id: 12, name: "Less", icon: <FaLess size={80} /> },
-  { id: 13, name: "Styled Components", icon: <SiStyledcomponents size={80} /> },
-  { id: 14, name: "Bootstrap", icon: <FaBootstrap size={80} /> },
-  { id: 15, name: "Tailwind CSS", icon: <RiTailwindCssFill size={80} /> },
-  { id: 16, name: "Wordpress", icon: <FaWordpress size={80} /> },
-  { id: 17, name: "VTEX", icon: <SiVtex size={80} /> },
-  { id: 18, name: "Woocommerce", icon: <SiWoocommerce size={80} /> },
+  { id: 1, name: "HTML", icon: <FaHtml5 size={96} /> },
+  { id: 2, name: "CSS", icon: <FaCss3Alt size={96} /> },
+  { id: 3, name: "JavaScript", icon: <IoLogoJavascript size={96} /> },
+  { id: 4, name: "JQuery", icon: <DiJqueryLogo size={96} /> },
+  { id: 5, name: "TypeScript", icon: <SiTypescript size={96} /> },
+  { id: 6, name: "ReactJS", icon: <RiReactjsFill size={96} /> },
+  { id: 7, name: "NextJS", icon: <RiNextjsFill size={96} /> },
+  { id: 8, name: "NodeJS", icon: <FaNodeJs size={96} /> },
+  { id: 9, name: "ExpressJS", icon: <SiExpress size={96} /> },
+  { id: 10, name: "FastifyJS", icon: <SiFastify size={96} /> },
+  { id: 11, name: "Sass", icon: <FaSass size={96} /> },
+  { id: 12, name: "Less", icon: <FaLess size={96} /> },
+  { id: 13, name: "Styled Components", icon: <SiStyledcomponents size={96} /> },
+  { id: 14, name: "Bootstrap", icon: <FaBootstrap size={96} /> },
+  { id: 15, name: "Tailwind CSS", icon: <RiTailwindCssFill size={96} /> },
+  { id: 16, name: "Wordpress", icon: <FaWordpress size={96} /> },
+  { id: 17, name: "VTEX", icon: <SiVtex size={96} /> },
+  { id: 18, name: "Woocommerce", icon: <SiWoocommerce size={96} /> },
 ];
 
 export function TechnologiesSection() {
   return (
-    <section id="#technologies" className="mt-44 mb-56 max-w-5xl mx-auto">
+    <section id="#technologies" className="mb-32 max-w-5xl mx-auto">
       <Splide
         options={{
           perPage: 4,
