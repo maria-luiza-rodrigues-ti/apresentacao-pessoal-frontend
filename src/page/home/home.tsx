@@ -30,7 +30,7 @@ export function Home() {
         mx-auto"
       />
       <Header />
-      <section className="mt-44 mb-56 max-w-5xl mx-auto">
+      <section className="mt-32 mb-32 max-w-5xl mx-auto">
         <motion.h1
           initial="hidden"
           whileInView={"reveal"}
