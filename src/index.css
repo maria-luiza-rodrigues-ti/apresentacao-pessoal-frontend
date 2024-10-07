@@ -5,3 +5,8 @@
 * {
   @apply transition-colors duration-200;
 }
+
+.strong-part {
+  font-weight: semibold;
+  color: black;
+}

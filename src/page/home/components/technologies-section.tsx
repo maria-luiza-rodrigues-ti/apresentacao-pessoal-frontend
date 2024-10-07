@@ -63,7 +63,6 @@ export function TechnologiesSection() {
             <SplideSlide key={technologies.id}>
               <div className="flex flex-col items-center">
                 {technologies.icon}
-                <span className="text-center mt-4">{technologies.name}</span>
               </div>
             </SplideSlide>
           );

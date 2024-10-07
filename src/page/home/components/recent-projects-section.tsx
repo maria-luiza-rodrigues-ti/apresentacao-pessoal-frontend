@@ -39,7 +39,7 @@ export function RecentProjectsSection() {
     <section id="#recents-projects" className="mb-32 max-w-5xl mx-auto">
       <h2 className="text-4xl text-white-70 text-left font-light mb-24">
         Alguns dos meus{" "}
-        <span className="text-white font-semibold">projetos recentes</span>
+        <strong className="font-semibold text-black">projetos recentes</strong>
       </h2>
       <div className="space-y-24">
         {recentProjetcs.map((project) => {
