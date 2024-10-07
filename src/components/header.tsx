@@ -67,17 +67,17 @@ export function Header() {
           <ul className="flex gap-6">
             <li>
               <a href="">
-                <FaLinkedin />
+                <FaLinkedin size={32} />
               </a>
             </li>
             <li>
               <a href="">
-                <FaGithub />
+                <FaGithub size={32} />
               </a>
             </li>
             <li className="border-l pl-6">
               <button onClick={handleDarkAdnLightMode}>
-                {darkMode ? <LuSun /> : <LuMoon />}
+                {darkMode ? <LuSun size={32} /> : <LuMoon size={32} />}
               </button>
             </li>
           </ul>
