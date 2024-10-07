@@ -45,7 +45,7 @@ const technologies = [
 
 export function TechnologiesSection() {
   return (
-    <section className="mb-32 max-w-5xl mx-auto text-black">
+    <section className="mb-32 max-w-5xl mx-auto">
       <Splide
         options={{
           perPage: 4,

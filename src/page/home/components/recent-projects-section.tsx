@@ -51,8 +51,11 @@ const recentProjetcs = [
 export function RecentProjectsSection() {
   return (
     <section id="#recents-projects" className="mb-32 max-w-5xl mx-auto">
-      <h2 className="text-4xl text-white-70 text-left font-light mb-24">
-        Projetos <span className="text-white font-semibold">Recentes</span>
+      <h2 className="text-4xl text-left font-light mb-24">
+        Projetos{" "}
+        <span className="dark:text-white text-black font-semibold">
+          recentes
+        </span>
       </h2>
       <div className="space-y-24">
         {recentProjetcs.map((project) => {
@@ -73,13 +76,16 @@ export function RecentProjectsSection() {
                 />
               </figure>
               <div className="mt-auto w-1/2">
-                <h3 className="uppercase text-black font-semibold text-3xl mb-4">
+                <h3 className="uppercase text-black dark:text-white font-semibold text-3xl mb-4">
                   {project.name}
                 </h3>
                 <p className="mb-6">{project.description}</p>
                 <ul className="flex flex-wrap gap-8">
                   {project.technologies.map((technologies) => (
-                    <li key={technologies.id} className="text-black">
+                    <li
+                      key={technologies.id}
+                      className="text-black dark:text-white"
+                    >
                       {technologies.icon}
                     </li>
                   ))}
@@ -90,7 +96,7 @@ export function RecentProjectsSection() {
                     className="flex
                     items-center
                     space-x-2
-                    text-white-70
+                    border-white-80
                     hover:text-white
                     transition-all 
                     duration-200
