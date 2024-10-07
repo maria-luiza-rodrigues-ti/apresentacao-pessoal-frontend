@@ -1,5 +1,6 @@
 import { Github, Linkedin, Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const menuOptions = [
   {
@@ -45,18 +46,18 @@ export function Header() {
         className="
       flex justify-between items-center 
       p-4 max-w-5xl mx-auto mt-8
-      bg-white-25 dark:bg-dark-header-bg backdrop-blur-[2px]
-      border rounded-xl border-white-25 dark:border-dark-header-bg"
+      bg-white-25 dark:bg-white-25 backdrop-blur-[2px]
+      border rounded-xl border-white-25 dark:border-dark-header-bg transition-all duration-300"
       >
         <nav>
-          <ul className="flex gap-10">
-            <li>
+          <ul className="flex gap-10 text-white">
+            <motion.li whileHover={{ scale: 1.2 }}>
               <a href="/">Logo</a>
-            </li>
+            </motion.li>
             {menuOptions.map((option) => (
-              <li key={option.name}>
+              <motion.li key={option.name}>
                 <a href={option.href}>{option.name}</a>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </nav>
