@@ -6,6 +6,7 @@ import { splitStringUsingRegex } from "../../utils/splitStringUsingRegex";
 
 import BgGradient from "/assets/background-gradient-top.png";
 import { TechnologiesSection } from "./components/technologies-section";
+import { RecentProjectsSection } from "./components/recent-projects-section";
 
 const heading = "Oi, eu sou Maria Luiza!";
 const description =
@@ -71,6 +72,7 @@ export function Home() {
         </a>
       </section>
       <TechnologiesSection />
+      <RecentProjectsSection />
     </>
   );
 }
