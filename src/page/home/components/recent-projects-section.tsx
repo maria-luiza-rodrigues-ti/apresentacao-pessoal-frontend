@@ -1,4 +1,7 @@
+import { FaCss3Alt, FaNodeJs } from "react-icons/fa";
 import { LuChevronRight } from "react-icons/lu";
+import { RiReactjsFill } from "react-icons/ri";
+import { SiFastify, SiStyledcomponents } from "react-icons/si";
 
 const recentProjetcs = [
   {
@@ -7,7 +10,10 @@ const recentProjetcs = [
     image: "/assets/coffee-delivery.png",
     description:
       "Este projeto é uma aplicação de e-commerce onde é possível produtos (cafés) disponíveis para compra, adicionar uma quantidade específicas de itens no carrinho, aumentar ou remover a quantidade de itens no carrinho. Além disso, a quantidade de itens são mostrados no Header da aplicação.",
-    technologies: ["React", "Styled Components"],
+    technologies: [
+      { id: 1, icon: <RiReactjsFill size={48} /> },
+      { id: 2, icon: <SiStyledcomponents size={48} /> },
+    ],
     github:
       "https://github.com/maria-luiza-rodrigues-ti/coffee-delivery-challenge",
     live: " https://maria-luiza-rodrigues-ti.github.io/coffee-delivery-challenge/",
@@ -18,7 +24,12 @@ const recentProjetcs = [
     image: "/assets/entertainment-web-app.png",
     description:
       "Este é um projeto fullstack de uma plataforma de streaming, que ainda está em andamento. Nele será possível buscar filmes e séries, salvar como favorito e assistir aos filmes.",
-    technologies: ["React", "Styled Components", "NodeJS", "Fastify"],
+    technologies: [
+      { id: 1, icon: <RiReactjsFill size={48} /> },
+      { id: 2, icon: <SiStyledcomponents size={48} /> },
+      { id: 3, icon: <FaNodeJs size={48} /> },
+      { id: 4, icon: <SiFastify size={48} /> },
+    ],
     github: "https://github.com/maria-luiza-rodrigues-ti/entertainment-web-app",
     live: "https://entertainment-web-app-drab-omega.vercel.app/home",
   },
@@ -28,7 +39,10 @@ const recentProjetcs = [
     image: "/assets/todo-list.png",
     description:
       "O ToDo List é um gerenciador de tarefas intuitivo e responsivo que permite aos usuários organizar e priorizar suas atividades diárias de maneira eficiente. A aplicação foi desenvolvida com foco em boas práticas de desenvolvimento front-end.",
-    technologies: ["React", "CSS"],
+    technologies: [
+      { id: 1, icon: <RiReactjsFill size={48} /> },
+      { id: 2, icon: <FaCss3Alt size={48} /> },
+    ],
     github: "https://github.com/maria-luiza-rodrigues-ti/todo-list",
     live: "https://mlrodrigues-todo-list.vercel.app",
   },
@@ -38,10 +52,7 @@ export function RecentProjectsSection() {
   return (
     <section id="#recents-projects" className="mb-32 max-w-5xl mx-auto">
       <h2 className="text-4xl text-white-70 text-left font-light mb-24">
-        Alguns dos meus{" "}
-        <strong className="block font-semibold text-black">
-          projetos recentes
-        </strong>
+        Projetos <span className="text-white font-semibold">Recentes</span>
       </h2>
       <div className="space-y-24">
         {recentProjetcs.map((project) => {
@@ -62,18 +73,16 @@ export function RecentProjectsSection() {
                 />
               </figure>
               <div className="mt-auto w-1/2">
-                <h3 className="uppercase text-black font-semibold mb-4">
+                <h3 className="uppercase text-black font-semibold text-3xl mb-4">
                   {project.name}
                 </h3>
-                <p className="mb-6 text-xl">{project.description}</p>
-                <ul className="flex flex-wrap gap-4">
+                <p className="mb-6">{project.description}</p>
+                <ul className="flex flex-wrap gap-8">
                   {project.technologies.map((technologies) => (
-                    <li key={technologies} className="text-black">
-                      {technologies}
-                    </li>
+                    <li key={technologies.id}>{technologies.icon}</li>
                   ))}
                 </ul>
-                <div className="flex mt-8 gap-6">
+                <div className="flex mt-8 gap-4">
                   <a
                     href={project.github}
                     className="flex
