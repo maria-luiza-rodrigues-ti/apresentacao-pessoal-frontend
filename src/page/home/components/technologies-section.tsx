@@ -46,6 +46,12 @@ const technologies = [
 export function TechnologiesSection() {
   return (
     <section className="mb-32 max-w-5xl mx-auto">
+      <h2 className="text-4xl text-left font-light mb-24">
+        <strong className="dark:text-white text-black font-semibold">
+          Tecnologias
+        </strong>{" "}
+        que utilizo
+      </h2>
       <Splide
         options={{
           perPage: 4,

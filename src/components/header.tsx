@@ -5,19 +5,20 @@ import { LuSun, LuMoon } from "react-icons/lu";
 
 const menuOptions = [
   {
-    name: "About",
-    href: "/about",
+    name: "Sobre",
+    href: "/",
   },
   {
-    name: "Work",
-    href: "/work",
+    name: "Tecnologias",
+    href: "/technologies",
   },
   {
-    name: "Tech Stack",
-    href: "/tech-stack",
+    name: "Projetos",
+    href: "/projects",
   },
+
   {
-    name: "Contact",
+    name: "Contato",
     href: "/contact",
   },
 ];

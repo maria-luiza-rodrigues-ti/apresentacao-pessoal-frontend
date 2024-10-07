@@ -11,24 +11,32 @@ export function Footer() {
       <div className="absolute max-w-5xl mx-auto inset-0 flex flex-col items-center justify-center">
         <h2 className="text-5xl mb-1">
           Entre{" "}
-          <strong className="font-semibold text-black">em contato,</strong>
+          <strong className="font-semibold text-black dark:text-white">
+            em contato,
+          </strong>
         </h2>
         <span className="text-xl mt-2">Para conversarmos mais</span>
       </div>
       <nav className="absolute max-w-5xl mx-auto bottom-10 inset-x-0 text-center mb-8">
         <ul className="flex flex-row gap-20 justify-center items-center">
           <li>
-            <a href="">
-              <MdEmail size={48} className="text-black" />
+            <a href="mailto:marialuiza.r.eng@gmail.com">
+              <MdEmail size={48} className="text-black dark:text-white" />
             </a>
           </li>
           <li>
-            <a href="" className="text-black">
+            <a
+              href="https://github.com/maria-luiza-rodrigues-ti"
+              className="text-black dark:text-white"
+            >
               <FaGithub size={48} />
             </a>
           </li>
           <li>
-            <a href="" className="text-black">
+            <a
+              href="https://www.linkedin.com/in/maria-luiza-rodrigues-ti/"
+              className="text-black dark:text-white"
+            >
               <FaLinkedin size={48} />
             </a>
           </li>
