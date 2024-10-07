@@ -1,9 +1,24 @@
-import BgGradient from "/assets/background-gradient-top.png";
+import { ChevronDown } from "lucide-react";
+import { motion, Variants } from "framer-motion";
 
 import { Header } from "../../components/header";
-import { ChevronDown } from "lucide-react";
+import { splitStringUsingRegex } from "../../utils/splitStringUsingRegex";
+
+import BgGradient from "/assets/background-gradient-top.png";
+
+const heading = "Oi, eu sou Maria Luiza!";
+const description =
+  "Sou uma desenvolvedora Front End comprometida em criar interfaces dinâmicas e acessíveis, aliando design responsivo com performance e usabilidade.";
+
+const CharacterVariants: Variants = {
+  hidden: { opacity: 0 },
+  reveal: { opacity: 1 },
+};
 
 export function Home() {
+  const headingCharacters = splitStringUsingRegex(heading);
+  const descriptionCharacters = splitStringUsingRegex(description);
+
   return (
     <>
       <img
@@ -15,21 +30,38 @@ export function Home() {
       />
       <Header />
       <section className="mt-44 mb-56 max-w-5xl mx-auto">
-        <h1 className="text-7xl text-white-70 font-light text-center">
-          <span className="">Oi, </span>
-          <span>
-            eu sou{" "}
-            <strong className=" text-onyx dark:text-white font-extrabold">
-              Maria Luiza {""}
-            </strong>
-            !
-          </span>
-        </h1>
-        <p className="mt-20 max-w-4xl mx-auto text-2xl text-white-70 text-center">
-          Sou uma desenvolvedora Front End comprometida em criar interfaces
-          dinâmicas e acessíveis, aliando design responsivo com performance e
-          usabilidade.
-        </p>
+        <motion.h1
+          initial="hidden"
+          whileInView={"reveal"}
+          transition={{ staggerChildren: 0.02 }}
+          className="text-7xl text-white-70 font-light text-center"
+        >
+          {headingCharacters.map((character) => (
+            <motion.span
+              key={character}
+              transition={{ duration: 0.5 }}
+              variants={CharacterVariants}
+            >
+              {character}
+            </motion.span>
+          ))}
+        </motion.h1>
+        <motion.p
+          initial="hidden"
+          whileInView={"reveal"}
+          transition={{ staggerChildren: 0.02 }}
+          className="mt-20 max-w-4xl mx-auto text-2xl text-white-70 text-center"
+        >
+          {descriptionCharacters.map((character) => (
+            <motion.span
+              key={character}
+              transition={{ duration: 0.35 }}
+              variants={CharacterVariants}
+            >
+              {character}
+            </motion.span>
+          ))}
+        </motion.p>
         <a href="#technologies" className="flex justify-center mt-32">
           <ChevronDown size={64} className="text-white-70" />
         </a>
