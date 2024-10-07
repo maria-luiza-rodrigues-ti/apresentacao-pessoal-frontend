@@ -8,7 +8,7 @@ import BgGradient from "/assets/background-gradient-top.png";
 
 const heading = "Oi, eu sou Maria Luiza!";
 const description =
-  "Sou uma desenvolvedora Front End comprometida em criar interfaces dinâmicas e acessíveis, aliando design responsivo com performance e usabilidade.";
+  "Sou uma Desenvolvedora Front End com experiência em React, TypeScript e plataformas de e-commerce. Comprometida em criar interfaces dinâmicas e acessíveis, aliando design responsivo com performance e usabilidade.";
 
 const CharacterVariants: Variants = {
   hidden: { opacity: 0 },
@@ -34,7 +34,7 @@ export function Home() {
           initial="hidden"
           whileInView={"reveal"}
           transition={{ staggerChildren: 0.02 }}
-          className="text-7xl text-white-70 font-light text-center"
+          className="text-7xl text-white font-extrabold text-center"
         >
           {headingCharacters.map((character) => (
             <motion.span
@@ -50,7 +50,7 @@ export function Home() {
           initial="hidden"
           whileInView={"reveal"}
           transition={{ staggerChildren: 0.02 }}
-          className="mt-20 max-w-4xl mx-auto text-2xl text-white-70 text-center"
+          className="mt-20 max-w-5xl mx-auto text-2xl text-white text-center font-light"
         >
           {descriptionCharacters.map((character) => (
             <motion.span
@@ -63,7 +63,10 @@ export function Home() {
           ))}
         </motion.p>
         <a href="#technologies" className="flex justify-center mt-32">
-          <ChevronDown size={64} className="text-white-70" />
+          <ChevronDown
+            size={64}
+            className="text-white-70 hover:text-white transition-all"
+          />
         </a>
       </section>
       <section
