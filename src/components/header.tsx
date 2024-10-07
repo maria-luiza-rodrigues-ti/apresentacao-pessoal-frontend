@@ -1,6 +1,7 @@
-import { Github, Linkedin, Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { LuSun, LuMoon } from "react-icons/lu";
 
 const menuOptions = [
   {
@@ -66,17 +67,17 @@ export function Header() {
           <ul className="flex gap-6">
             <li>
               <a href="">
-                <Linkedin />
+                <FaLinkedin />
               </a>
             </li>
             <li>
               <a href="">
-                <Github />
+                <FaGithub />
               </a>
             </li>
             <li className="border-l pl-6">
               <button onClick={handleDarkAdnLightMode}>
-                {darkMode ? <Sun /> : <Moon />}
+                {darkMode ? <LuSun /> : <LuMoon />}
               </button>
             </li>
           </ul>

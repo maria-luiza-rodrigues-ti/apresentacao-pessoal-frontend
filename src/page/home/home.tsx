@@ -5,6 +5,7 @@ import { Header } from "../../components/header";
 import { splitStringUsingRegex } from "../../utils/splitStringUsingRegex";
 
 import BgGradient from "/assets/background-gradient-top.png";
+import { TechnologiesSection } from "./components/technologies-section";
 
 const heading = "Oi, eu sou Maria Luiza!";
 const description =
@@ -69,10 +70,7 @@ export function Home() {
           />
         </a>
       </section>
-      <section
-        id="#technologies"
-        className="mt-44 mb-56 max-w-5xl mx-auto"
-      ></section>
+      <TechnologiesSection />
     </>
   );
 }
