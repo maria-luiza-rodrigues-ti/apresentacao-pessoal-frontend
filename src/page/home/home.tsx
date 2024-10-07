@@ -1,6 +1,7 @@
 import BgGradient from "/assets/background-gradient-top.png";
 
 import { Header } from "../../components/header";
+import { ChevronDown } from "lucide-react";
 
 export function Home() {
   return (
@@ -14,50 +15,29 @@ export function Home() {
       />
       <Header />
       <section className="mt-44 mb-56 max-w-5xl mx-auto">
-        <div className="w-3/4">
-          <h1 className="text-7xl text-dark-gray font-bold">
-            <span className="">Oi, </span>
-            sou {""}
+        <h1 className="text-7xl text-white-70 font-light text-center">
+          <span className="">Oi, </span>
+          <span>
+            eu sou{" "}
             <strong className=" text-onyx dark:text-white font-extrabold">
-              Maria Luiza
+              Maria Luiza {""}
             </strong>
-          </h1>
-          <p className="mt-10 max-w-xl text-2xl text-dark-gray">
-            Desenvolvedora Front End comprometida em criar interfaces dinâmicas
-            e acessíveis, aliando design responsivo com performance e
-            usabilidade.
-          </p>
-          <ul className="mt-10 flex gap-4 ">
-            <li>
-              <a
-                href=""
-                className="py-4 px-8 rounded-lg
-                block
-               dark:bg-onyx 
-                darK:active:bg-gradient-to-r dark:active:from-dark-main-bg dark:active:to-card-bg dark: dark:active:text-white 
-                dark:active:shadow-button"
-              >
-                Veja meu currículo
-              </a>
-            </li>
-            <li>
-              <a
-                href=""
-                className="py-4 px-8 rounded-lg
-                block
-               dark:bg-onyx 
-                darK:active:bg-gradient-to-r dark:active:from-dark-main-bg dark:active:to-card-bg dark: dark:active:text-white 
-                dark:active:shadow-button"
-              >
-                Entre em contato
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <img src="" alt="" />
-        </div>
+            !
+          </span>
+        </h1>
+        <p className="mt-20 max-w-4xl mx-auto text-2xl text-white-70 text-center">
+          Sou uma desenvolvedora Front End comprometida em criar interfaces
+          dinâmicas e acessíveis, aliando design responsivo com performance e
+          usabilidade.
+        </p>
+        <a href="#technologies" className="flex justify-center mt-32">
+          <ChevronDown size={64} className="text-white-70" />
+        </a>
       </section>
+      <section
+        id="#technologies"
+        className="mt-44 mb-56 max-w-5xl mx-auto"
+      ></section>
     </>
   );
 }

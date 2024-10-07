@@ -7,7 +7,7 @@ export default {
   ],
   theme: {
     extend: {
-      darkMode: 'selector',
+      darkMode: 'class',
       fontFamily: {
         'sans': ['Inter', 'sans-serif'],
         'serif': ['Nanum Pen Script', 'serif'],
@@ -19,6 +19,7 @@ export default {
         'light-gray': '#C5C5C5',
         'light-blue': 'rgba(63, 100, 234, 0.43)',
         'light-red': 'rgba(233, 63, 64, 0.43)',
+        'light-purple': 'rgba(128, 63, 234, 0.43)',
         'light-yellow': 'rgba(255, 184, 0, 0.43)',
         'dark-card-border': '#383737',
         'white-10': 'rgba(255, 255, 255, 0.1)',

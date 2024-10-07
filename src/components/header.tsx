@@ -1,4 +1,5 @@
-import { Github, Linkedin, Sun } from "lucide-react";
+import { Github, Linkedin, Moon, Sun } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const menuOptions = [
   {
@@ -20,6 +21,24 @@ const menuOptions = [
 ];
 
 export function Header() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const prefersColorScheme = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    );
+
+    if (prefersColorScheme.matches) {
+      setDarkMode(true);
+    }
+  }, []);
+
+  function handleDarkAdnLightMode() {
+    setDarkMode(!darkMode);
+
+    document.body.classList.toggle("dark");
+  }
+
   return (
     <header>
       <div
@@ -55,7 +74,9 @@ export function Header() {
               </a>
             </li>
             <li className="border-l pl-6">
-              <Sun />
+              <button onClick={handleDarkAdnLightMode}>
+                {darkMode ? <Sun /> : <Moon />}
+              </button>
             </li>
           </ul>
         </nav>
