@@ -19,16 +19,16 @@ export function Footer() {
         <ul className="flex flex-row gap-20 justify-center items-center">
           <li>
             <a href="">
-              <MdEmail size={48} />
+              <MdEmail size={48} className="text-black" />
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" className="text-black">
               <FaGithub size={48} />
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" className="text-black">
               <FaLinkedin size={48} />
             </a>
           </li>

@@ -79,7 +79,9 @@ export function RecentProjectsSection() {
                 <p className="mb-6">{project.description}</p>
                 <ul className="flex flex-wrap gap-8">
                   {project.technologies.map((technologies) => (
-                    <li key={technologies.id}>{technologies.icon}</li>
+                    <li key={technologies.id} className="text-black">
+                      {technologies.icon}
+                    </li>
                   ))}
                 </ul>
                 <div className="flex mt-8 gap-4">
@@ -90,10 +92,13 @@ export function RecentProjectsSection() {
                     space-x-2
                     text-white-70
                     hover:text-white
-                    transition-colors 
+                    transition-all 
+                    duration-200
                     border
                     rounded-[100px]
-                    px-4 py-2"
+                    px-4 py-2
+                    hover:bg-light-background-gradient
+                  "
                   >
                     <span>Github</span>
                     <LuChevronRight size={24}></LuChevronRight>
@@ -105,10 +110,11 @@ export function RecentProjectsSection() {
                     space-x-2
                     text-white-70
                     hover:text-white
-                    transition-colors 
+                    transition-all 
                     border
                     rounded-[100px]
-                    px-4 py-2"
+                    px-4 py-2
+                    hover:bg-light-background-gradient"
                   >
                     <span>Live</span>
                     <LuChevronRight size={24}></LuChevronRight>

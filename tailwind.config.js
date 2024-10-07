@@ -19,7 +19,7 @@ export default {
         'dark-primary-gradient': 'linear-gradient(to left, #904e95, #e96443)',
         'dark-background-gradient': 'linear-gradient(180deg, #010208 16.39%, #010206 20.51%, #040008 24.79%, #010101 30.46%, #010101 34.11%, #010101 36.21%, #010101 100%)',
         'light-primary-gradient': 'linear-gradient(99deg, #7A1F8F 0.07%, #8A2D54 106.32%)',
-        'light-background-gradient': 'linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);',
+        'light-background-gradient': 'linear-gradient(to right, #da4453, #89216b)',
       },
     },
   },
