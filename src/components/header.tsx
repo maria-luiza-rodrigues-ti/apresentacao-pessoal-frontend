@@ -33,6 +33,7 @@ export function Header() {
     if (prefersColorScheme.matches) {
       setDarkMode(true);
     }
+    console.log("1", darkMode);
   }, []);
 
   function handleDarkAdnLightMode() {
@@ -44,19 +45,17 @@ export function Header() {
   return (
     <header>
       <div
-        className="
+        className=" relative
       flex justify-between items-center 
-      p-4 max-w-5xl mx-auto mt-8
-      bg-white-25 dark:bg-white-25 backdrop-blur-[2px]
-      border rounded-xl border-white-25 dark:border-dark-header-bg transition-all duration-300"
+      py-2 px-6  max-w-5xl mx-auto
+      bg-black/50 text-white dark:bg-white-25 backdrop-blur-[2px]
+      border rounded-xl border-black/30 dark:border-dark-header-bg transition-all duration-300
+      z-20"
       >
         <nav>
-          <ul className="flex gap-10 text-white">
-            <motion.li whileHover={{ scale: 1.2 }}>
-              <a href="/">Logo</a>
-            </motion.li>
+          <ul className="flex gap-10 text-white font-semibold">
             {menuOptions.map((option) => (
-              <motion.li key={option.name}>
+              <motion.li whileHover={{ fontSize: "20px" }} key={option.name}>
                 <a href={option.href}>{option.name}</a>
               </motion.li>
             ))}
@@ -65,18 +64,18 @@ export function Header() {
 
         <nav>
           <ul className="flex gap-6">
-            <li>
+            <motion.li whileHover={{ scale: 1.1 }}>
               <a href="">
                 <FaLinkedin size={32} />
               </a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li whileHover={{ scale: 1.1 }}>
               <a href="">
                 <FaGithub size={32} />
               </a>
-            </li>
+            </motion.li>
             <li className="border-l pl-6">
-              <button onClick={handleDarkAdnLightMode}>
+              <button onClick={handleDarkAdnLightMode} className="flex">
                 {darkMode ? <LuSun size={32} /> : <LuMoon size={32} />}
               </button>
             </li>
