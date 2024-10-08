@@ -100,13 +100,15 @@ export function RecentProjectsSection() {
                     hover:text-white
                     transition-all 
                     duration-200
-                    border
+                    border border-black hover:border-white group dark:border-white
                     rounded-[100px]
                     px-4 py-2
                     hover:bg-light-background-gradient
                   "
                   >
-                    <span>Github</span>
+                    <span className="text-black font-medium group-hover:text-white dark:text-white">
+                      Github
+                    </span>
                     <LuChevronRight size={24}></LuChevronRight>
                   </a>
                   <a
@@ -117,12 +119,15 @@ export function RecentProjectsSection() {
                     text-white-70
                     hover:text-white
                     transition-all 
-                    border
+                    border border-black hover:border-white dark:border-white
                     rounded-[100px]
                     px-4 py-2
-                    hover:bg-light-background-gradient"
+                    hover:bg-light-background-gradient
+                    group"
                   >
-                    <span>Live</span>
+                    <span className="text-black font-medium group-hover:text-white dark:text-white">
+                      Live
+                    </span>
                     <LuChevronRight size={24}></LuChevronRight>
                   </a>
                 </div>
