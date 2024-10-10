@@ -64,8 +64,8 @@ export function RecentProjectsSection() {
               key={project.id}
               className={
                 project.id % 2 === 0
-                  ? "flex flex-row-reverse gap-8"
-                  : "flex gap-8"
+                  ? "flex flex-wrap md:flex-row-reverse gap-8"
+                  : "flex flex-wrap gap-8"
               }
             >
               <figure className="w-1/2 h-96 rounded-2xl overflow-auto">
