@@ -8,7 +8,7 @@ import { AboutSection } from "./components/about-section";
 
 export function Home() {
   return (
-    <div className="relative bg-white text-black/80 font-light dark:dark-background-gradient backdrop-blur-[2px] dark:bg-dark-background-gradient dark:text-dark-neutral-2 scroll-smooth pt-8">
+    <div className="relative bg-white text-black/80 font-light dark:dark-background-gradient backdrop-blur-[2px] dark:bg-dark-background-gradient dark:text-dark-neutral-2 scroll-smooth md:pt-8">
       <img
         src={BgGradient}
         alt=""

@@ -50,7 +50,7 @@ export function TechnologiesSection() {
 
   return (
     <section
-      className="mb-32 max-w-5xl mx-auto"
+      className="pt-16 mb-32 max-w-5xl mx-auto"
       ref={technologiesSectionRef}
       id="technologies-section"
     >

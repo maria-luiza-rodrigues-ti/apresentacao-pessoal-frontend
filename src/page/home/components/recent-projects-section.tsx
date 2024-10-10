@@ -50,7 +50,7 @@ const recentProjetcs = [
 
 export function RecentProjectsSection() {
   return (
-    <section id="#recents-projects" className="mt-16 mb-32 max-w-5xl mx-auto">
+    <section id="#recents-projects" className="mb-32 max-w-5xl mx-auto">
       <h2 className="text-4xl text-left font-light mb-24">
         Projetos{" "}
         <span className="dark:text-white text-black font-semibold">
