@@ -15,9 +15,9 @@ export function AboutSection() {
   }
 
   return (
-    <section className="mt-32 mb-16 max-w-5xl mx-auto z-20 relative h-[calc(100vh-16rem)] flex flex-col justify-between">
+    <section className="mt-32 mb-16 px-4 md:px-0 max-w-5xl mx-auto z-20 relative h-[calc(100vh-16rem)] flex flex-col justify-between">
       <div>
-        <h1 className="text-7xl text-center font-light">
+        <h1 className="text-5xl md:text-7xl text-center font-light">
           <ReactTyped strings={["Eu sou "]} typeSpeed={40} showCursor={false} />{" "}
           <strong className="font-semibold text-black dark:text-white">
             <ReactTyped
@@ -28,7 +28,7 @@ export function AboutSection() {
             />
           </strong>
         </h1>
-        <p className="mt-20 max-w-5xl mx-auto text-2xl dark:text-neutral-2 text-center font-light">
+        <p className="mt-20 max-w-5xl mx-auto text-xl md:text-2xl dark:text-neutral-2 text-center font-light">
           <strong className="font-semibold text-black dark:text-white">
             <ReactTyped
               strings={["Desenvolvedora Front-end"]}
