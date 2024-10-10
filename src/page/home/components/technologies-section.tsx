@@ -54,7 +54,7 @@ export function TechnologiesSection() {
       ref={technologiesSectionRef}
       id="technologies-section"
     >
-      <h2 className="text-4xl text-left font-light mb-24">
+      <h2 className="text-3xl md:text-4xl text-left font-light mb-24">
         <strong className="dark:text-white text-black font-semibold">
           Tecnologias
         </strong>{" "}
@@ -70,6 +70,14 @@ export function TechnologiesSection() {
           pauseOnHover: false,
           interval: 3500,
           type: "loop",
+          breakpoints: {
+            640: {
+              perPage: 2,
+            },
+            1024: {
+              perPage: 3,
+            },
+          },
         }}
       >
         {technologies.map((technologies) => {

@@ -51,7 +51,7 @@ const recentProjetcs = [
 export function RecentProjectsSection() {
   return (
     <section id="#recents-projects" className="mb-32 max-w-5xl mx-auto">
-      <h2 className="text-4xl text-left font-light mb-24">
+      <h2 className="text-3xl md:ext-4xl text-left font-light mb-24">
         Projetos{" "}
         <span className="dark:text-white text-black font-semibold">
           recentes
@@ -64,19 +64,19 @@ export function RecentProjectsSection() {
               key={project.id}
               className={
                 project.id % 2 === 0
-                  ? "flex flex-wrap md:flex-row-reverse gap-8"
-                  : "flex flex-wrap gap-8"
+                  ? "flex flex-wrap md:flex-row-reverse md:flex-nowrap gap-8"
+                  : "flex flex-wrap md:flex-nowrap gap-8"
               }
             >
-              <figure className="w-1/2 h-96 rounded-2xl overflow-auto">
+              <figure className="w-full md:w-1/2 h-96 rounded-2xl overflow-auto">
                 <img
                   src={import.meta.env.BASE_URL + project.image}
                   alt=""
                   className="w-full h-full object-cover"
                 />
               </figure>
-              <div className="mt-auto w-1/2">
-                <h3 className="uppercase text-black dark:text-white font-semibold text-3xl mb-4">
+              <div className="mt-auto w-full md:w-1/2">
+                <h3 className="uppercase text-black dark:text-white font-semibold text-2xl md:text-3xl mb-4">
                   {project.name}
                 </h3>
                 <p className="mb-6">{project.description}</p>

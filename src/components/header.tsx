@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaHamburger, FaLinkedin } from "react-icons/fa";
 import { LuSun, LuMoon } from "react-icons/lu";
 
 const menuOptions = [
@@ -25,6 +25,7 @@ const menuOptions = [
 
 export function Header() {
   const [darkMode, setDarkMode] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const prefersColorScheme = window.matchMedia(
@@ -43,6 +44,12 @@ export function Header() {
     document.body.classList.toggle("dark");
   }
 
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsMobile(true);
+    }
+  }, []);
+
   return (
     <header>
       <div
@@ -53,15 +60,19 @@ export function Header() {
       border rounded-xl border-black/30 dark:border-bg-white/10 transition-all duration-300
       z-20"
       >
-        <nav>
-          <ul className="flex gap-10 text-white font-semibold dark:">
-            {menuOptions.map((option) => (
-              <motion.li whileHover={{ fontSize: "20px" }} key={option.name}>
-                <a href={option.href}>{option.name}</a>
-              </motion.li>
-            ))}
-          </ul>
-        </nav>
+        {isMobile ? (
+          <FaHamburger />
+        ) : (
+          <nav>
+            <ul className="flex gap-10 text-white font-semibold dark:">
+              {menuOptions.map((option) => (
+                <motion.li whileHover={{ fontSize: "20px" }} key={option.name}>
+                  <a href={option.href}>{option.name}</a>
+                </motion.li>
+              ))}
+            </ul>
+          </nav>
+        )}
 
         <nav className="text-white">
           <ul className="flex gap-6">
@@ -75,11 +86,15 @@ export function Header() {
                 <FaGithub size={32} />
               </a>
             </motion.li>
-            <li className="border-l pl-6">
-              <button onClick={handleDarkAdnLightMode} className="flex">
-                {darkMode ? <LuSun size={32} /> : <LuMoon size={32} />}
-              </button>
-            </li>
+            {isMobile ? (
+              ""
+            ) : (
+              <li className="border-l pl-6">
+                <button onClick={handleDarkAdnLightMode} className="flex">
+                  {darkMode ? <LuSun size={32} /> : <LuMoon size={32} />}
+                </button>
+              </li>
+            )}
           </ul>
         </nav>
       </div>

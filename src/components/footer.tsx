@@ -8,8 +8,8 @@ export function Footer() {
     <footer className="relative text-white-70 text-sm mx-auto">
       <img src={BgGradient} alt="" className="w-full h-auto block rotate-180" />
 
-      <div className="absolute max-w-5xl mx-auto inset-0 flex flex-col items-center justify-center">
-        <h2 className="text-5xl mb-1">
+      <div className="absolute max-w-5xl mx-auto bottom-32 inset-x-0 md:inset-0 flex flex-col items-center justify-center">
+        <h2 className="text-3xl md:text-5xl mb-1">
           Entre{" "}
           <strong className="font-semibold text-black dark:text-white">
             em contato,
@@ -17,7 +17,7 @@ export function Footer() {
         </h2>
         <span className="text-xl mt-2">Para conversarmos mais</span>
       </div>
-      <nav className="absolute max-w-5xl mx-auto bottom-10 inset-x-0 text-center mb-8">
+      <nav className="absolute max-w-5xl mx-auto -bottom-0 md:bottom-10 inset-x-0 text-center mb-8">
         <ul className="flex flex-row gap-20 justify-center items-center">
           <li>
             <a href="mailto:marialuiza.r.eng@gmail.com">
