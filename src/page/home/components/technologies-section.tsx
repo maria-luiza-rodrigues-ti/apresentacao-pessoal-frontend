@@ -1,6 +1,6 @@
+import { useRef } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
-import "@splidejs/react-splide/css";
 import { DiJqueryLogo } from "react-icons/di";
 import {
   FaBootstrap,
@@ -21,6 +21,8 @@ import {
   SiVtex,
   SiWoocommerce,
 } from "react-icons/si";
+
+import "@splidejs/react-splide/css";
 
 const technologies = [
   { id: 1, name: "HTML", icon: <FaHtml5 size={96} /> },
@@ -44,8 +46,14 @@ const technologies = [
 ];
 
 export function TechnologiesSection() {
+  const technologiesSectionRef = useRef(null);
+
   return (
-    <section className="mb-32 max-w-5xl mx-auto">
+    <section
+      className="mb-32 max-w-5xl mx-auto"
+      ref={technologiesSectionRef}
+      id="technologies-section"
+    >
       <h2 className="text-4xl text-left font-light mb-24">
         <strong className="dark:text-white text-black font-semibold">
           Tecnologias
