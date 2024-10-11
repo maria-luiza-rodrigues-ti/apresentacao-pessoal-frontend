@@ -36,7 +36,6 @@ export function Header() {
     if (prefersColorScheme.matches) {
       setDarkMode(true);
     }
-    console.log("1", darkMode);
   }, []);
 
   function handleDarkAdnLightMode() {
