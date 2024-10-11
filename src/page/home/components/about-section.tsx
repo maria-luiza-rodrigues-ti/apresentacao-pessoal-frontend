@@ -1,21 +1,13 @@
+import { Link } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 import { ReactTyped } from "react-typed";
 
 export function AboutSection() {
-  function handleScrollToTechnologiesSection() {
-    const technologiesSectionId = document.getElementById(
-      "technologies-section"
-    );
-
-    if (technologiesSectionId === null) {
-      return;
-    }
-
-    technologiesSectionId.scrollIntoView({ behavior: "smooth" });
-  }
-
   return (
-    <section className="mt-32 mb-16 max-w-5xl mx-auto z-20 relative h-[calc(100vh-16rem)] flex flex-col justify-between">
+    <section
+      id="about"
+      className="pt-32 mb-16 max-w-5xl mx-auto z-20 relative h-[calc(100vh-16rem)] flex flex-col justify-between"
+    >
       <div>
         <h1 className="text-5xl md:text-7xl text-center font-light">
           <ReactTyped strings={["Eu sou "]} typeSpeed={40} showCursor={false} />{" "}
@@ -65,15 +57,12 @@ export function AboutSection() {
           </span>
         </p>
       </div>
-      <button
-        onClick={handleScrollToTechnologiesSection}
-        className="block mx-auto mt-32"
-      >
+      <Link to="#technologies" className="block mx-auto mt-32">
         <ChevronDown
           size={64}
           className="text-white-70 hover:text-black dark:hover:text-white dark:text-neutral-1 transition-all"
         />
-      </button>
+      </Link>
     </section>
   );
 }

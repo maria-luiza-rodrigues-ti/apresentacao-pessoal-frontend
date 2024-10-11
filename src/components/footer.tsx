@@ -5,7 +5,7 @@ import BgGradient from "/assets/background-gradient-top.png";
 
 export function Footer() {
   return (
-    <footer className="relative text-white-70 text-sm mx-auto">
+    <footer className="relative text-white-70 text-sm mx-auto" id="contact">
       <img src={BgGradient} alt="" className="w-full h-auto block rotate-180" />
 
       <div className="absolute max-w-5xl mx-auto bottom-32 inset-x-0 md:inset-0 flex flex-col items-center justify-center">

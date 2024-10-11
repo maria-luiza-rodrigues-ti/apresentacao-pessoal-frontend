@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 import { DiJqueryLogo } from "react-icons/di";
@@ -46,14 +45,8 @@ const technologies = [
 ];
 
 export function TechnologiesSection() {
-  const technologiesSectionRef = useRef(null);
-
   return (
-    <section
-      className="pt-16 mb-32 max-w-5xl mx-auto"
-      ref={technologiesSectionRef}
-      id="technologies-section"
-    >
+    <section className="pt-16 mb-32 max-w-5xl mx-auto" id="technologies">
       <h2 className="text-3xl md:text-4xl text-left font-light mb-24">
         <strong className="dark:text-white text-black font-semibold">
           Tecnologias

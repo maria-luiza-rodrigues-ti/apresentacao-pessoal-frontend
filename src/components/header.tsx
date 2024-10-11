@@ -1,25 +1,26 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaHamburger, FaLinkedin } from "react-icons/fa";
-import { LuSun, LuMoon } from "react-icons/lu";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { LuSun, LuMoon, LuMenu } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 const menuOptions = [
   {
     name: "Sobre",
-    href: "/",
+    href: "#about",
   },
   {
     name: "Tecnologias",
-    href: "/technologies",
+    href: "#technologies",
   },
   {
     name: "Projetos",
-    href: "/projects",
+    href: "#projects",
   },
 
   {
     name: "Contato",
-    href: "/contact",
+    href: "#contact",
   },
 ];
 
@@ -61,13 +62,15 @@ export function Header() {
       z-20"
       >
         {isMobile ? (
-          <FaHamburger />
+          <LuMenu size={32} />
         ) : (
           <nav>
-            <ul className="flex gap-10 text-white font-semibold dark:">
+            <ul className="flex gap-10 text-white font-semibold">
               {menuOptions.map((option) => (
                 <motion.li whileHover={{ fontSize: "20px" }} key={option.name}>
-                  <a href={option.href}>{option.name}</a>
+                  <Link reloadDocument to={option.href}>
+                    {option.name}
+                  </Link>
                 </motion.li>
               ))}
             </ul>

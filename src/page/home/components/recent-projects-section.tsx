@@ -50,8 +50,8 @@ const recentProjetcs = [
 
 export function RecentProjectsSection() {
   return (
-    <section id="#recents-projects" className="mb-32 max-w-5xl mx-auto">
-      <h2 className="text-3xl md:ext-4xl text-left font-light mb-24">
+    <section id="projects" className="mb-32 max-w-5xl mx-auto">
+      <h2 className="text-3xl md:text-4xl text-left font-light mb-24">
         Projetos{" "}
         <span className="dark:text-white text-black font-semibold">
           recentes
