@@ -57,7 +57,11 @@ export function AboutSection() {
           </span>
         </p>
       </div>
-      <Link to="#technologies" className="block mx-auto mt-32">
+      <Link
+        to="#technologies"
+        className="block mx-auto mt-32"
+        aria-label="Ir para seção de tecnologias"
+      >
         <ChevronDown
           size={64}
           className="text-white-70 hover:text-black dark:hover:text-white dark:text-neutral-1 transition-all"

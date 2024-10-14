@@ -130,7 +130,11 @@ export function Header() {
               ""
             ) : (
               <li className="border-l pl-6">
-                <button onClick={handleDarkAdnLightMode} className="flex">
+                <button
+                  onClick={handleDarkAdnLightMode}
+                  className="flex"
+                  role="botãoescolhatema"
+                >
                   {darkMode ? <LuSun size={32} /> : <LuMoon size={32} />}
                 </button>
               </li>
