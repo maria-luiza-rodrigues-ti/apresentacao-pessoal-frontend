@@ -133,7 +133,7 @@ export function Header() {
                 <button
                   onClick={handleDarkAdnLightMode}
                   className="flex"
-                  role="botãoescolhatema"
+                  aria-label="Alternar entre tema claro e tema escuro"
                 >
                   {darkMode ? <LuSun size={32} /> : <LuMoon size={32} />}
                 </button>

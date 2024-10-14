@@ -10,6 +10,7 @@ const recentProjetcs = [
     id: 1,
     name: "Coffee Delivery",
     image: "/assets/coffee-delivery.webp",
+    alt: "Página  de delivery de café com seleção e preços de cafés, com opções como Espresso, Latte e Mocha. Uma xícara de café com grãos e temperos é exibida na parte superior.",
     description:
       "Este projeto é uma aplicação de e-commerce onde é possível produtos (cafés) disponíveis para compra, adicionar uma quantidade específicas de itens no carrinho, aumentar ou remover a quantidade de itens no carrinho. Além disso, a quantidade de itens são mostrados no Header da aplicação.",
     technologies: [
@@ -26,6 +27,7 @@ const recentProjetcs = [
     image: "/assets/entertainment-web-app.webp",
     description:
       "Este é um projeto fullstack de uma plataforma de streaming, que ainda está em andamento. Nele será possível buscar filmes e séries, salvar como favorito e assistir aos filmes.",
+    alt: "Captura de tela da interface de uma plataforma de streaming exibindo filmes em alta na parte superior, incluindo 'Planeta Terra' e 'Bottom Gear'. Abaixo, há uma seção 'Recomendado para você' com várias miniaturas de filmes, cada uma com classificações de usuários e botões de reprodução.",
     technologies: [
       { id: 1, icon: <RiReactjsFill size={48} /> },
       { id: 2, icon: <SiStyledcomponents size={48} /> },
@@ -39,6 +41,7 @@ const recentProjetcs = [
     id: 3,
     name: "ToDo List",
     image: "/assets/todo-list.webp",
+    alt: "Uma interface de aplicativo de lista de tarefas com tema escuro e uma barra de pesquisa na parte superior chamada 'Adicione uma nova tarefa'. Há três tarefas listadas abaixo, intituladas 'Desafio 1', 'Desafio 2' e 'Desafio 3', todas em 'Tarefas criadas'.",
     description:
       "O ToDo List é um gerenciador de tarefas intuitivo e responsivo que permite aos usuários organizar e priorizar suas atividades diárias de maneira eficiente. A aplicação foi desenvolvida com foco em boas práticas de desenvolvimento front-end.",
     technologies: [
@@ -73,7 +76,7 @@ export function RecentProjectsSection() {
               <figure className="w-full md:w-1/2 h-96 rounded-2xl overflow-auto">
                 <LazyLoadImage
                   src={import.meta.env.BASE_URL + project.image}
-                  alt=""
+                  alt={project.alt}
                   className="w-full h-full object-cover"
                 />
               </figure>

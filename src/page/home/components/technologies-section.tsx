@@ -75,7 +75,7 @@ export function TechnologiesSection() {
       >
         {technologies.map((technologies) => {
           return (
-            <SplideSlide key={technologies.id} role="itemtecnologia">
+            <SplideSlide key={technologies.id} role="slider">
               <div className="flex flex-col items-center">
                 {technologies.icon}
               </div>

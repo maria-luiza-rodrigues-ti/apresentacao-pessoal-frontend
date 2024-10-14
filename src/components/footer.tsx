@@ -9,7 +9,7 @@ export function Footer() {
     <footer className="relative text-white-70 text-sm mx-auto" id="contact">
       <LazyLoadImage
         src={BgGradient}
-        alt=""
+        alt="Um gradiente vibrante em transição de azul para roxo, vermelho e laranja, formando um padrão semicircular em um fundo transparente."
         className="w-full h-auto block rotate-180"
       />
 
