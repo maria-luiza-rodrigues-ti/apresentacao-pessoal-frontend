@@ -28,6 +28,9 @@ export function Footer() {
             <a
               href="https://github.com/maria-luiza-rodrigues-ti"
               className="text-black dark:text-white"
+              aria-label="Acesse o Github de Maria Luiza Rodrigues"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               <FaGithub size={48} />
             </a>
@@ -36,6 +39,9 @@ export function Footer() {
             <a
               href="https://www.linkedin.com/in/maria-luiza-rodrigues-ti/"
               className="text-black dark:text-white"
+              aria-label="Acesse o Github de Maria Luiza Rodrigues"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               <FaLinkedin size={48} />
             </a>

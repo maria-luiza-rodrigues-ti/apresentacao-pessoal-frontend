@@ -107,12 +107,22 @@ export function Header() {
         <nav className="text-white">
           <ul className="flex gap-6">
             <motion.li whileHover={{ scale: 1.1 }}>
-              <a href="">
+              <a
+                href="https://www.linkedin.com/in/maria-luiza-rodrigues-ti/"
+                aria-label="Acesse o Linkedin de Maria Luiza Rodrigues"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <FaLinkedin size={32} />
               </a>
             </motion.li>
             <motion.li whileHover={{ scale: 1.1 }}>
-              <a href="">
+              <a
+                href="https://www.linkedin.com/in/maria-luiza-rodrigues-ti/"
+                aria-label="Acesse o Github de Maria Luiza Rodrigues"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <FaGithub size={32} />
               </a>
             </motion.li>
