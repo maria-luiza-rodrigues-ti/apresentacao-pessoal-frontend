@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { LuSun, LuMoon, LuMenu } from "react-icons/lu";
+import { LuSun, LuMoon } from "react-icons/lu";
 import { Link } from "react-router-dom";
+
+import { HeaderMobile } from "./header/header-mobile";
 
 const menuOptions = [
   {
@@ -61,7 +63,7 @@ export function Header() {
       z-20"
       >
         {isMobile ? (
-          <LuMenu size={32} />
+          <HeaderMobile />
         ) : (
           <nav>
             <ul className="flex gap-10 text-white font-semibold">

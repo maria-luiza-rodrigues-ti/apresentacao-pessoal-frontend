@@ -6,7 +6,7 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="pt-32 mb-16 max-w-5xl mx-auto z-20 relative h-[calc(100vh-16rem)] flex flex-col justify-between"
+      className="pt-32 mb-16 max-w-5xl mx-auto relative h-[calc(100vh-16rem)] flex flex-col justify-between"
     >
       <div>
         <h1 className="text-5xl md:text-7xl text-center font-light">
