@@ -3,11 +3,13 @@ import { LuChevronRight } from "react-icons/lu";
 import { RiReactjsFill } from "react-icons/ri";
 import { SiFastify, SiStyledcomponents } from "react-icons/si";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 const recentProjetcs = [
   {
     id: 1,
     name: "Coffee Delivery",
-    image: "/assets/coffee-delivery.png",
+    image: "/assets/coffee-delivery.webp",
     description:
       "Este projeto é uma aplicação de e-commerce onde é possível produtos (cafés) disponíveis para compra, adicionar uma quantidade específicas de itens no carrinho, aumentar ou remover a quantidade de itens no carrinho. Além disso, a quantidade de itens são mostrados no Header da aplicação.",
     technologies: [
@@ -21,7 +23,7 @@ const recentProjetcs = [
   {
     id: 2,
     name: "Entertainment Web App",
-    image: "/assets/entertainment-web-app.png",
+    image: "/assets/entertainment-web-app.webp",
     description:
       "Este é um projeto fullstack de uma plataforma de streaming, que ainda está em andamento. Nele será possível buscar filmes e séries, salvar como favorito e assistir aos filmes.",
     technologies: [
@@ -36,7 +38,7 @@ const recentProjetcs = [
   {
     id: 3,
     name: "ToDo List",
-    image: "/assets/todo-list.png",
+    image: "/assets/todo-list.webp",
     description:
       "O ToDo List é um gerenciador de tarefas intuitivo e responsivo que permite aos usuários organizar e priorizar suas atividades diárias de maneira eficiente. A aplicação foi desenvolvida com foco em boas práticas de desenvolvimento front-end.",
     technologies: [
@@ -69,7 +71,7 @@ export function RecentProjectsSection() {
               }
             >
               <figure className="w-full md:w-1/2 h-96 rounded-2xl overflow-auto">
-                <img
+                <LazyLoadImage
                   src={import.meta.env.BASE_URL + project.image}
                   alt=""
                   className="w-full h-full object-cover"

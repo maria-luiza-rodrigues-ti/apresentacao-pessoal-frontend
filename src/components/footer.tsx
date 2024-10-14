@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-import BgGradient from "/assets/background-gradient-top.png";
+import BgGradient from "/assets/background-gradient-top.webp";
 
 export function Footer() {
   return (

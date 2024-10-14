@@ -1,4 +1,4 @@
-import BgGradient from "/assets/background-gradient-top.png";
+import BgGradient from "/assets/background-gradient-top.webp";
 
 import { Header } from "../../components/header";
 import { TechnologiesSection } from "./components/technologies-section";
