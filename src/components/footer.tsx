@@ -2,11 +2,16 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 import BgGradient from "/assets/background-gradient-top.webp";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export function Footer() {
   return (
     <footer className="relative text-white-70 text-sm mx-auto" id="contact">
-      <img src={BgGradient} alt="" className="w-full h-auto block rotate-180" />
+      <LazyLoadImage
+        src={BgGradient}
+        alt=""
+        className="w-full h-auto block rotate-180"
+      />
 
       <div className="absolute max-w-5xl mx-auto bottom-32 inset-x-0 md:inset-0 flex flex-col items-center justify-center">
         <h2 className="text-3xl md:text-5xl mb-1">

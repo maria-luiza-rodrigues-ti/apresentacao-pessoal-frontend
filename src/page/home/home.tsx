@@ -1,4 +1,5 @@
 import BgGradient from "/assets/background-gradient-top.webp";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import { Header } from "../../components/header";
 import { TechnologiesSection } from "./components/technologies-section";
@@ -9,7 +10,7 @@ import { AboutSection } from "./components/about-section";
 export function Home() {
   return (
     <div className="relative bg-white text-black/80 font-light dark:dark-background-gradient backdrop-blur-[2px] dark:bg-dark-background-gradient dark:text-dark-neutral-2 scroll-smooth px-5 md:px-0 pt-5 md:pt-8">
-      <img
+      <LazyLoadImage
         src={BgGradient}
         alt=""
         className="absolute z-0 inset-0 
